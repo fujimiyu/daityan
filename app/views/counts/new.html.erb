@@ -1,5 +1,6 @@
 <h1>manpowanko</h1>
 <h3>新規count</h3>
+<%= link_to "ユーザーページへ",counts_home_path %>
 <%=form_for @count do |f|%>
     <div class="field>
       <%=f.label :step%>
@@ -14,4 +15,3 @@
     <%=f.submit"countを投稿する"%>
 <%end%>
 
-<%=link_to"count一覧に戻る",counts_path%>
