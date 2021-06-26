@@ -19,7 +19,20 @@ class CountsController < ApplicationController
   end
 
   def home
-    @counts =Count.where(user_id: current_user.id,"created_at >= ?", Date.today)
+    @counts =Count.where(user_id: current_user.id,created_at: Time.now.midnight..Time.now.end_of_day)
+  end
+
+  def present
+    if counts<1000 then
+      プレゼント1=rocked
+    else
+      プレゼント１=unrocked
+    end
+    if counts<2000 then
+      プレゼント２=rocked
+    else
+      プレゼント２=unrocked
+    end
   end
 
   def document
