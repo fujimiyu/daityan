@@ -1,3 +1,4 @@
+# coding: utf-8
 class CountsController < ApplicationController
   before_action :authenticate_user!
   def index
@@ -23,22 +24,14 @@ class CountsController < ApplicationController
   end
 
   def present
-    if counts<1000 then
-      プレゼント1=rocked
-    else
-      プレゼント１=unrocked
-    end
-    if counts<2000 then
-      プレゼント２=rocked
-    else
-      プレゼント２=unrocked
+    @counts = Count.where(user_id: current_user.id)
+    @number = 0
+    @counts.each do |t|
+     @number += t.step 
     end
   end
 
   def document
-  end
-
-  def present
   end
 
   private

@@ -1,5 +1,13 @@
-<h1>manpowanko</h1>
-<h3>本日の歩数</h3>
+<div class= "maintitle">
+  <h1>manpowanko</h1>
+</div>
+<div class="picture">
+  <%= image_tag 'manpowanko_home.jpg', size: '1000x500' ,class: "home" %>
+</div>
+  <div class = "title">
+ <h3>本日の歩数</h3>
+</div>
+
 <div class="counts-container">
  <% @counts.each do |t|%>
   <div class="count">
@@ -8,8 +16,12 @@
   </div>
  <%end%>
 </div>
-<%= link_to "新規投稿ページへ",new_count_path %>
-<%= link_to "履歴ページへ",counts_path%>
-<%= link_to "説明ページへ",counts_document_path%>
-<%= link_to "プレゼントページへ",counts_present_path%>
-<%= button_to 'ログアウト', destroy_user_session_path, method: :delete %>
+<div class="link">
+   <%= link_to "新規投稿ページへ",new_count_path, class: "apple" %>
+   <%= link_to "履歴ページへ",counts_path, class: "banana"%>
+   <%= link_to "説明ページへ",counts_document_path, class: "lemon"%>
+   <%= link_to "プレゼントページへ",counts_present_path, class: "orange"%>
+   <%= button_to 'ログアウト', destroy_user_session_path, method: :delete%>
+</div>
+
+

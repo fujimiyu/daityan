@@ -1,6 +1,13 @@
-<h1>manpowanko</h1>
-<h3>歩数一覧</h3>
-<%= link_to "ユーザーページへ",counts_home_path %>
+<div class = "ring">
+   <h1>manpowanko</h1>
+</div>
+
+<div class = "point">
+   <h3>歩数一覧</h3>
+</div>
+
+<%= link_to "ユーザーページへ",counts_home_path, class: "ips" %>
+
 <%= button_to 'ログアウト', destroy_user_session_path, method: :delete %>
 <div class="counts-container">
  <% @counts.each do |t|%>

@@ -1,6 +1,14 @@
-<h1>manpowanko</h1>
-<h3>新規count</h3>
-<%= link_to "ユーザーページへ",counts_home_path %>
+<div class = "cat">
+   <h1>manpowanko</h1>
+</div>
+
+<div class = "bag">
+   <h3>新規count</h3>
+</div>
+
+   <%= link_to "ユーザーページへ",counts_home_path, class: "shoose" %>
+
+
 <%=form_for @count do |f|%>
     <div class="field>
       <%=f.label :step%>

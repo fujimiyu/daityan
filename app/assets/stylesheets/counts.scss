@@ -1,3 +1,97 @@
 // Place all the styles related to the counts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+.home {
+    border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
+    width:  400px;       /* ※縦横を同値に */
+    height: 250px;       /* ※縦横を同値に */
+}
+.picture{
+    text-align: center;
+}
+.link{
+    border-top: medium dashed green;
+    
+}
+.title{
+    color: pink;
+}
+.maintitle{
+    color: orange;
+
+}
+.apple{
+    position:absolute;           /* 要素の配置方法を指定 */
+    padding:  20px;             /* 余白指定 */
+    left:  300px;                /* 左からの位置指定 */
+    top: 450px;                  /* 上からの位置指定 */
+    color: black;
+    border: 5px solid orangered;
+}
+.banana{
+    position:absolute;           /* 要素の配置方法を指定 */
+    padding:  20px;             /* 余白指定 */
+    left:  600px;                /* 左からの位置指定 */
+    top: 450px;                  /* 上からの位置指定 */
+    color: black;
+    border: 5px solid orangered;
+}
+.lemon{
+    position:absolute;           /* 要素の配置方法を指定 */
+    padding:  20px;             /* 余白指定 */
+    left:  300px;                /* 左からの位置指定 */
+    top: 550px;                  /* 上からの位置指定 */
+    color: black;
+
+    border: 5px solid orangered;
+}
+.orange{
+    position:absolute;           /* 要素の配置方法を指定 */
+    padding:  20px;             /* 余白指定 */
+    left:  600px;                /* 左からの位置指定 */
+    top: 550px;                  /* 上からの位置指定 */
+    color: black;
+    
+    border: 5px solid orangered;
+
+}
+.cat{
+    color: orange;
+
+}
+.bag{
+    color: pink;
+}
+.shoose{
+    color: black;
+}
+.ring{
+    color: orange;
+
+}
+.point{
+    color: pink;
+}
+.ips{
+    color: black;
+}
+.fire{
+    color: orange;
+
+}
+.ice{
+    color: pink;
+}
+.conan{
+    color: black;
+}
+.flower{
+    color: orange;
+
+}
+.cook{
+    color: pink;
+}
+.peach{
+    color: black;
+}
