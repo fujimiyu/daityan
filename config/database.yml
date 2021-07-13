@@ -26,4 +26,4 @@ production:
   encoding: unicode
   pool: 5
 
-# インデントは必ず半角スペース２つ
+  # インデントは必ず半角スペース２つ
